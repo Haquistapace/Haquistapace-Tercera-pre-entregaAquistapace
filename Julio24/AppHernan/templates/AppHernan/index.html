@@ -1,0 +1,26 @@
+{% extends "AppHernan/base.html" %}
+
+{% load static %}
+
+{% block title %} inicio {% endblock title %}
+
+{% block main %}
+    <!-- Content section 1-->
+    <section id="scroll">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'AppHernan/assets/img/04.jpg' %}" alt="..." /></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <h2 class="display-4">INICIO</h2>
+                        <h2 class="masthead-subheading mb-0">Somos un Club Deportivo,dedicados deporte amateur.
+                            Desarrollamos y promovemos los nuestros de manera competitiva, formativa y recreativa.</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock main %}

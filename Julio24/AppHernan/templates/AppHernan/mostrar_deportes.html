@@ -1,0 +1,17 @@
+{% extends 'AppHernan/base.html' %}
+
+{% load static %}
+
+{% block title %} Inicio {% endblock title %}
+
+{% block main %}
+
+
+{% for deporte in deportes %}
+    <li>{{ deporte }}</li><a href="{% url 'Delete' deporte.id %}">Borrar</a>
+{% endfor %}
+
+
+{% endblock main %}
+
+
